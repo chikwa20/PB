@@ -1,0 +1,123 @@
+.cnt-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.674);
+    width: 100%;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+}
+
+/* Informational Vertical Deck Stripe */
+.cnt-panel-info {
+    background: linear-gradient(135deg, #117843, #0b4e2b);
+    color: #ffffff;
+    padding: 40px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.cnt-panel-info h3 {
+    color: #d4e157;
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+
+.cnt-panel-info p {
+    font-size: 0.85rem;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.cnt-item {
+    margin-bottom: 25px;
+}
+
+.cnt-item strong {
+    display: block;
+    color: #d4e157;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cnt-item span {
+    font-size: 0.9rem;
+}
+
+.cnt-copyright {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-top: 20px;
+}
+
+/* Native Input Form Interface Panel */
+.cnt-panel-form {
+    padding: 40px;
+    flex: 2 1 450px;
+    box-sizing: border-box;
+}
+
+.cnt-panel-form h3 {
+    color: #1e3d59;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.cnt-group {
+    margin-bottom: 20px;
+}
+
+.cnt-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #333333;
+}
+
+.cnt-control {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+}
+
+.cnt-control:focus {
+    outline: none;
+    border-color: #117843;
+}
+
+.text-area-ctrl {
+    resize: vertical;
+    min-height: 110px;
+}
+
+/* Flat Static Action Button */
+.cnt-btn {
+    background-color: #1e3d59;
+    color: #ffffff;
+    border: none;
+    padding: 14px 24px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.cnt-btn:hover {
+    background-color: #112233;
+}

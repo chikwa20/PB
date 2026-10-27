@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/LP.css">
+    <link rel="stylesheet" href="../css/CP.css">
+    <link rel="stylesheet" href="../css/AP.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
     <title>Pickle Now</title>
 </head>
 <body>
 
     <div class="container">
         <div class="navbar">
-            <b>P</b> 
+            <b>P</b>
             <ul>
-                <li><a href="#ab">Page 1</a></li>
-                <li><a href="#be">Page 2</a></li>
+                <li><a href="#ab">Home</a></li>
+                <li><a href="#be">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#reserve" class="reserve-btn"><b>RESERVE A COURT</b></a></li>
             </ul>
         </div>
 
@@ -48,14 +53,110 @@
                 <div class="text">
                     <h4>This is a sample title</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur eum quaerat rem illo asperiores rerum minus illum minima. Neque officia eaque doloribus maiores laboriosam fugit sequi rem eveniet, accusamus et.</p>
-                    <a href="" class="butLM">Learn More</a>
+                    <a href="#be" class="butLM">Learn More <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
                 </div>
 
             </section>
 
+            <!-- PAGE 2: ABOUT US SECTION -->
             <section id="be">
-                <div class="text2">
-                    <p>This is page 2</p>
+                <h2 class="pkl-title">DISCOVER THE COURT</h2>
+                <p class="pkl-subtitle">Unpacking our passion for the fastest-growing paddle sport</p>
+                
+                <div class="pkl-flex-grid">
+                    <!-- Left Column Stack (2 Boxes) -->
+                    <div class="pkl-left-stack">
+                        <div class="pkl-box">
+                            <i class=" pkl-icon" aria-hidden="true"></i>
+                            <span class="pkl-badge">01. Our Core Mission</span>
+                            <h3>Perfecting the Third Shot Drop</h3>
+                            <p>We are creating a robust pickleball infrastructure that tracks match statistics and links global court networks. From understanding the two-bounce rule to elite competitive brackets, we streamline your flow.</p>
+                        </div>
+                        <div class="pkl-box">
+                            <i class=" pkl-icon" aria-hidden="true"></i>
+                            <span class="pkl-badge">02. The Network Rule</span>
+                            <h3>Stay Clear of the Non-Volley Zone</h3>
+                            <p>Pickleball thrives on high-energy proximity and active social engagement. Our engine supports open-play mapping matrices, localized leaderboards, and system tools designed to cultivate the local community.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column Tall (1 Box matching left height) -->
+                    <div class="pkl-right-tall">
+                        <div class="pkl-box tall-variant">
+                            <i class=" pkl-icon" aria-hidden="true"></i>
+                            <span class="pkl-badge dark-badge">03. Structural System</span>
+                            <h3>Serving Up Seamless Plays</h3>
+                            <p>Engineered out of love for the concrete "pop" of composite paddles meeting polymer balls, our system eliminates scheduling friction entirely.</p>
+                            <p>From reservation nodes configured to standard 20x44 feet templates to historical player indexing, we build the digital courts so you can concentrate purely on winning your next match.</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <!-- PAGE 3: NEW CONTACT SECTION -->
+            <section id="contact">
+                <h2 class="pkl-title">Get on Court</h2>
+                <p class="pkl-subtitle">Have questions about rankings, setup, or tournament brackets? Drop us a line.</p>
+
+                <div class="cnt-layout">
+                    <!-- Left Panel Informational -->
+                    <div class="cnt-panel-info">
+                        <div>
+                            <h3>Pickleball HQ</h3>
+                            <p>Your ultimate operational dashboard for active ladders, scheduling algorithms, and league systems.</p>
+                        </div>
+                        <div>
+                            <div class="cnt-item">
+                                <i class="ri-phone-line" aria-hidden="true"></i>
+                                <strong>The Dinking Line</strong>
+                                <span>+1 (555) 745-7677</span>
+                            </div>
+                            <div class="cnt-item">
+                                <i class="ri-mail-line" aria-hidden="true"></i>
+                                <strong>System Support Inbox</strong>
+                                <span>support@picklenow.local</span>
+                            </div>
+                            <div class="cnt-item">
+                                <i class="ri-map-pin-line" aria-hidden="true"></i>
+                                <strong>Main Office Row</strong>
+                                <span>Bainbridge Pavilion, Court #4</span>
+                            </div>
+                        </div>
+                        <div class="cnt-copyright">
+                            © 2026 Pickle Now System. All Rights Reserved.
+                        </div>
+                    </div>
+
+                    <!-- Right Panel Form Wrapper -->
+                    <div class="cnt-panel-form">
+                        <h3>Leave a Message</h3>
+                        <form action="#" method="POST" onsubmit="return false;">
+                            <div class="cnt-group">
+                                <label for="pklName">Player / Club Representative</label>
+                                <input type="text" id="pklName" class="cnt-control" placeholder="e.g., Ben Johns" required>
+                            </div>
+                            <div class="cnt-group">
+                                <label for="pklEmail">Email Identity</label>
+                                <input type="email" id="pklEmail" class="cnt-control" placeholder="player@dinkmaster.com" required>
+                            </div>
+                            <div class="cnt-group">
+                                <label for="pklTopic">Topic of Inquiry</label>
+                                <select id="pklTopic" class="cnt-control">
+                                    <option>System Access & Court Booking</option>
+                                    <option>Tournament Bracket Setup</option>
+                                    <option>Player Profile / Rating Issue</option>
+                                    <option>General Feedback</option>
+                                </select>
+                            </div>
+                            <div class="cnt-group">
+                                <label for="pklMsg">Your Message</label>
+                                <textarea id="pklMsg" class="cnt-control text-area-ctrl" placeholder="Type your notes about local court availability, system integration, or league inquiries here..." required></textarea>
+                            </div>
+                            <button type="submit" class="cnt-btn">Send Message to HQ <i class="ri-send-plane-line" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
                 </div>
             </section>
         </div>
